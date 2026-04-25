@@ -1,0 +1,49 @@
+
+> burfee-admin@1.0.0 web
+> expo start --web
+
+Starting project at /app
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web ./index.ts ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 70.3% (114/136)
+Web Bundling failed 6450ms index.ts (220 modules)
+Unable to resolve "./src/context/AuthContext" from "src/Navigation.tsx"
+[0m [90m 4 |[39m [36mimport[39m { createBottomTabNavigator } [36mfrom[39m [32m'@react-navigation/bottom-tabs'[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { [33mLayoutDashboard[39m[33m,[39m [33mZap[39m[33m,[39m [33mBell[39m[33m,[39m [33mHistory[39m } [36mfrom[39m [32m'lucide-react-native'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { useAuth } [36mfrom[39m [32m'./src/context/AuthContext'[39m[33m;[39m
+ [90m   |[39m                          [31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m [33mLoginScreen[39m [36mfrom[39m [32m'./src/screens/LoginScreen'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mDashboardScreen[39m [36mfrom[39m [32m'./src/screens/DashboardScreen'[39m[33m;[39m
+ [90m 9 |[39m [36mimport[39m [33mRechargeListScreen[39m [36mfrom[39m [32m'./src/screens/RechargeListScreen'[39m[33m;[39m[0m
+
+Import stack:
+
+ src/Navigation.tsx
+ | import "./src/context/AuthContext"
+
+ App.tsx
+ | import "./src/Navigation"
+
+ index.ts
+ | import "./App"
+
+
+ | import "./index.ts"
+
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web ./index.ts ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 76.3% ( 370/2395)
+Web ./index.ts ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 76.3% (1296/2421)
+Web ./index.ts ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░ 93.7% (2387/2476)
+Web Bundled 13118ms index.ts (2656 modules)
+ LOG  [web] Logs will appear in the browser console
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 105ms index.ts (1 module)
+ LOG  [web] Logs will appear in the browser console
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 96ms index.ts (1 module)
+ LOG  [web] Logs will appear in the browser console
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 138ms index.ts (1 module)
+ LOG  [web] Logs will appear in the browser console
